@@ -1,0 +1,297 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 16px;
+  font-family: SFHeitiSC, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+a {
+  color: #7e8c8d;
+  text-decoration: none;
+  outline: 0;
+  -webkit-backface-visibility: hidden;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 3px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 3px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /*overflow: hidden;*/
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: #fff;
+}
+ul,
+li {
+  list-style-type: none;
+}
+/*tencent mobile reset css*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input::-webkit-input-placeholder {
+  color: #999;
+}
+input:focus::-webkit-input-placeholder {
+  color: #333;
+}
+/*cancel input border radius*/
+input,
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+}
+.pos-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap {
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1242px;
+  height: 2208px;
+  margin-top: -1104px;
+  margin-left: -621px;
+}
+.head-title {position: absolute;
+  top: 50%;
+  left: 50%;
+  font: 0/0 a;
+  color: transparent;
+  width: 129px;
+  height: 594px;
+  margin-top: -778px;
+  margin-left: -228px;background-repeat: no-repeat;}
+.link {position: absolute;
+  top: 50%;
+  left: 50%;
+  font: 0/0 a;
+  color: transparent;
+  width: 39px;
+  height: 264px;
+  margin-top: -450px;
+  margin-left: -280px;background-repeat: no-repeat;}
+.logo {position: absolute;
+  font: 0/0 a;
+  color: transparent;
+  width: 267px;
+  height: 45px;
+  
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.3333);
+  transform-origin: center bottom;background-repeat: no-repeat;}
+.light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 899px;
+  height: 813px;
+  margin-top: 220px;
+  margin-left: -450px;
+  background-image: url(../img/light.png);
+  background-size: 100% 100%;
+}
+.snow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  left: 0;
+  margin-top: 64px;
+}
+.light {
+  animation: light 3s linear infinite;
+}
+.flake {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+@keyframes light {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+@keyframes flake {
+  
+}
+
+.head-title{
+    background-position:0px 0px;
+}
+.link{
+    background-position:-145px 0px;
+}
+.logo{
+    background-position:-200px 0px;
+}
+.head-title,.link,.logo{
+    background-size: 483px 594px;
+    background-image: url(../sprite/g.png)
+}
