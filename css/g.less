@@ -67,19 +67,30 @@ html,body{
     margin-top:64px;
 }
 
-.light{
-    animation:light 3s linear infinite;
+.tree-snow{
+    .pos-center;
 }
 
-.flake{
-    width:10px;
-    height:10px;
-    background:rgba(255,255,255,0.5);
-    border-radius: 50%;
-    overflow:hidden;
-    position:absolute;
-    top:0;
-    left:50%;
+.tree-snow1{
+    width:30px;
+    height:37px;
+    background-image: url(../slice/snow1.png?__sprite);
+    margin-top:-462px;
+    margin-left:-550px;
+    animation:fall 8s ease-in infinite;
+}
+
+.tree-snow2{
+    width:28px;
+    height:35px;
+    background-image: url(../slice/snow2.png?__sprite);
+    margin-top:-850px;
+    margin-left:228px;
+    animation:fall 10s ease-in infinite;
+}
+
+.light{
+    animation:light 3s linear infinite;
 }
 
 @keyframes light{
@@ -91,6 +102,17 @@ html,body{
     }
 }
 
-@keyframes flake{
-    
+@keyframes fall{
+    0%{
+        opacity:0;
+        transform:translate(0,0);
+    }
+    80%{
+        opacity:1;
+        transform:translate(0,0);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0,2000px);
+    }
 }
